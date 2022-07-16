@@ -1,38 +1,26 @@
 
-# fff
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+# ff
+
 ## Description 
- fff
+ ff
 
   ## Table of Contents 
 
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
   
 ## Installation 
- ffff
+ ff
 ## Usage 
- ffff
-## License 
- ### ISC Licence 
-
-The content of this application is licensed under the Internet Systems Consortium (ISC) License 
-
-[https://choosealicense.com/licenses/isc/](https://choosealicense.com/licenses/isc/)
+ ff
 
 ## Contributing 
- fff
+ ff
 ## Tests 
- fff
+ ff
 ## Questions 
 
-  Contact me by email or GitHub if you have any questions about this project.
-
-  * email: ffff
-
-  * GitHub: https://github.com/ffffffffffffd
-  
+Contact me by [email](mailto:email@this.com) or [GitHub](https://github.com/rest) if you have any questions about this project.

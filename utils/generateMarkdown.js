@@ -107,10 +107,7 @@ ${renderLicenseSection(data)}
 ## Contributing \n ${data.contributing}
 ## Tests \n ${data.tests}
 ## Questions \n
-  Contact me by email or GitHub if you have any questions about this project.\n
-  * email: ${data.email}\n
-  * GitHub: https://github.com/${data.github}
-  `;
+Contact me by [E-mail](mailto:${data.email}) or [GitHub](https://github.com/${data.github}) if you have any questions about this project.\n`;
 }
 
 module.exports = generateMarkdown;
