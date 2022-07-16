@@ -4,13 +4,16 @@ function renderLicenseLink(data) {
   let licence = ' ';
 
   const licences = {
-    MIT: `### ${data.license} Licence \n
-[https://choosealicense.com/](https://choosealicense.com/licenses/mit/) \n
+    MIT: `### ${data.license} License \n
+The content of this application is licensed under the MIT License. \n
+[https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/) \n
 ` ,
     ISC: `### ${data.license} Licence \n
+The content of this application is licensed under the Internet Systems Consortium (ISC) License \n
 [https://choosealicense.com/licenses/isc/](https://choosealicense.com/licenses/isc/)
 `,
-    GNU: `### ${data.license} Licence \n
+    GNU: `### ${data.license} License \n
+The content of this application is licensed under the GNU General Public Version 3 License \n
 [https://choosealicense.com/licenses/gpl-3.0/](https://choosealicense.com/licenses/gpl-3.0/)`,
   }
 

@@ -1,7 +1,6 @@
 
 # fff
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description 
  fff
 ## Table of Contents 
@@ -17,9 +16,13 @@
 ## Usage 
  fff
 ## License 
- ### GNU GPLv3 Licence 
+ ### MIT License 
 
-[https://choosealicense.com/licenses/gpl-3.0/](https://choosealicense.com/licenses/gpl-3.0/)
+The content of this application is licensed under the MIT License. 
+
+[https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/) 
+
+
 ## Contributing 
  fff
 ## Tests 
