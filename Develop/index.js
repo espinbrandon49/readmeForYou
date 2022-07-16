@@ -1,10 +1,11 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const fs = require('fs') 
 const generateMarkdown = require('./utils/generateMarkdown.js')
 const inquirer = require('inquirer')
 
-// TODO: Create an array of questions for user input
+// Function to prompt input to populate a README.md 
 function dataResponse() {
+  // function to ask questions
   inquirer.prompt([
     {
       type: 'input',
@@ -53,22 +54,21 @@ function dataResponse() {
       name: 'github',
     },
   ])
+  // function to handle the response 
   .then(function(data) {
-    console.log(data)
     const fileName = 'README.md'
     writeToFile(fileName, data)
   })
 }
 
-// TODO: Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {
-  //fileName = 'README.md'
   fs.writeFile(fileName, generateMarkdown(data), (err) => {
     err ? console.log(err): console.log('success')
   })
 }
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {
   dataResponse()
 }
