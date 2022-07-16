@@ -2,16 +2,16 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
   let badge = '';
-  const badges = {
 
+  const badges = {
     MIT: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
     ,
 
     ISC: `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`,
 
-    GNU: `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-`,
+    GNU: `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`,
   }
+
   switch (`${data.license}`) {
     case 'MIT':
       badge = badges.MIT;
@@ -23,6 +23,7 @@ function renderLicenseBadge(data) {
       badge = badges.GNU;
       break;
   }
+
   return badge
 }
 
@@ -56,6 +57,7 @@ The content of this application is licensed under the GNU General Public Version
       licence = licences.GNU;
       break;
   }
+
   return licence
 }
 
@@ -68,21 +70,22 @@ function renderLicenseSection(data) {
   return section
 }
 
-// Function that returns the license badge
+// Function that returns the table of contents section of README
 // If there is no license, do not include in table of contents
 function tableOfContents(data) {
   let table;
   const license = renderLicenseLink(data)
+
   license.length == 0
-  ? table = `
+    ? table = `
   ## Table of Contents \n
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
-  ` 
-  : table = `
+  `
+    : table = `
   ## Table of Contents \n
   * [Installation](#installation)
   * [Usage](#usage)

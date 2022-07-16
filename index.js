@@ -3,7 +3,7 @@ const fs = require('fs')
 const generateMarkdown = require('./utils/generateMarkdown.js')
 const inquirer = require('inquirer')
 
-// Function to populate a README.md 
+// Function to create a README.md 
 function promptData() {
   // function to prompt author's input
   inquirer.prompt([
@@ -62,7 +62,7 @@ function promptData() {
   })
 }
 
-// Function to write README file
+// Function to write file
 function writeToFile(fileName, content) {
   fs.writeFile(fileName, content, (err) => {
     err ? console.log(err): console.log('success')
