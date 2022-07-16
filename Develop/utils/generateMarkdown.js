@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseLink(data) {
-  let licence = ' ';
+  let licence = '';
 
   const licences = {
     MIT: `### ${data.license} License \n
@@ -34,7 +34,7 @@ The content of this application is licensed under the GNU General Public Version
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
-  let badge = ' ';
+  let badge = '';
   const badges = {
 
     MIT: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
@@ -59,22 +59,49 @@ function renderLicenseBadge(data) {
   return badge
 }
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `
-# ${data.title}
-${renderLicenseBadge(data)}
-## Description \n ${data.description}
-## Table of Contents \n
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(data) {
+  let section = '';
+  const license = renderLicenseLink(data)
+  license.length == 0 ? section : section = `## License \n ${license}`
+  return section
+}
+
+function tableOfContents(data) {
+  let table;
+  const license = renderLicenseLink(data)
+  license.length == 0
+  ? table = `
+  ## Table of Contents \n
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  ` 
+  : table = `
+  ## Table of Contents \n
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
+  `
+  return table
+}
+
+// TODO: Create a function to generate markdown for README
+function generateMarkdown(data) {
+  return `
+# ${data.title}
+${renderLicenseBadge(data)}
+## Description \n ${data.description}
+${tableOfContents(data)}
 ## Installation \n ${data.installation}
 ## Usage \n ${data.usage}
-## License \n ${renderLicenseLink(data)}
+${renderLicenseSection(data)}
 ## Contributing \n ${data.contributing}
 ## Tests \n ${data.tests}
 ## Questions \n
