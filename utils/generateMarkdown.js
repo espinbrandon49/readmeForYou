@@ -1,4 +1,32 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns the license badge
+// If there is no license, return an empty string
+function renderLicenseBadge(data) {
+  let badge = '';
+  const badges = {
+
+    MIT: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+    ,
+
+    ISC: `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`,
+
+    GNU: `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+`,
+  }
+  switch (`${data.license}`) {
+    case 'MIT':
+      badge = badges.MIT;
+      break;
+    case 'ISC':
+      badge = badges.ISC;
+      break;
+    case 'GNU GPLv3':
+      badge = badges.GNU;
+      break;
+  }
+  return badge
+}
+
+// Function that returns a license link based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseLink(data) {
   let licence = '';
@@ -31,35 +59,7 @@ The content of this application is licensed under the GNU General Public Version
   return licence
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseBadge(data) {
-  let badge = '';
-  const badges = {
-
-    MIT: `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-    ,
-
-    ISC: `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`,
-
-    GNU: `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-`,
-  }
-  switch (`${data.license}`) {
-    case 'MIT':
-      badge = badges.MIT;
-      break;
-    case 'ISC':
-      badge = badges.ISC;
-      break;
-    case 'GNU GPLv3':
-      badge = badges.GNU;
-      break;
-  }
-  return badge
-}
-
-// TODO: Create a function that returns the license section of README
+// Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(data) {
   let section = '';
@@ -68,6 +68,8 @@ function renderLicenseSection(data) {
   return section
 }
 
+// Function that returns the license badge
+// If there is no license, do not include in table of contents
 function tableOfContents(data) {
   let table;
   const license = renderLicenseLink(data)
@@ -92,7 +94,7 @@ function tableOfContents(data) {
   return table
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
   return `
 # ${data.title}

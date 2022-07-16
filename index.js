@@ -3,9 +3,9 @@ const fs = require('fs')
 const generateMarkdown = require('./utils/generateMarkdown.js')
 const inquirer = require('inquirer')
 
-// Function to prompt input to populate a README.md 
-function dataResponse() {
-  // function to ask questions
+// Function to populate a README.md 
+function promptData() {
+  // function to prompt author's input
   inquirer.prompt([
     {
       type: 'input',
@@ -54,23 +54,24 @@ function dataResponse() {
       name: 'github',
     },
   ])
-  // function to handle the response 
+  // function to write the author's input
   .then(function(data) {
     const fileName = 'README.md'
-    writeToFile(fileName, data)
+    const content = generateMarkdown(data)
+    writeToFile(fileName, content)
   })
 }
 
 // Function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFile(fileName, generateMarkdown(data), (err) => {
+function writeToFile(fileName, content) {
+  fs.writeFile(fileName, content, (err) => {
     err ? console.log(err): console.log('success')
   })
 }
 
 // Function to initialize app
 function init() {
-  dataResponse()
+  promptData()
 }
 
 // Function call to initialize app
