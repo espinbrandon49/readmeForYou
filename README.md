@@ -1,6 +1,6 @@
 
 # 
-[![License:](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Description 
  
 
@@ -8,7 +8,6 @@
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
@@ -17,13 +16,6 @@
  
 ## Usage 
  
-## License 
- ### MIT License 
-
-The content of this application is licensed under the MIT License. 
-
-[https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/) 
-
 
 ## Contributing 
  
