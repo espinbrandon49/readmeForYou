@@ -1,7 +1,7 @@
 // Function that returns the license badge
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
-  let license
+  let license;
   if (!`${data.license}`) {
     license = ''
   } else {
