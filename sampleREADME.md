@@ -4,7 +4,7 @@
 ## Description 
  As a project to make a high quality README
 
-  ## Table of Contents 
+## Table of Contents 
 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -23,7 +23,6 @@
 The content of this application is licensed under the MIT License. 
 
 [https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/) 
-
 
 ## Contributing 
  with a loud 'Meow'
