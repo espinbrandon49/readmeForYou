@@ -31,7 +31,7 @@ function promptData() {
       type: 'checkbox',
       message: 'Which licence to use?',
       name: 'license',
-      choices: ['MIT', 'ISC', 'GNU GPLv3']
+      choices: ['MIT', 'ISC', 'BSD']
     },
     {
       type: 'input',

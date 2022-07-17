@@ -27,7 +27,7 @@ The content of this application is licensed under the MIT License.
 ## Contributing 
  with a loud 'Meow'
 ## Tests 
- place your index finger on top of your nose and say 'meow'
+ test 1 test 2 test 3
 ## Questions 
 
-Contact me by [E-mail](mailto:email@email.com) or [GitHub](https://github.com/githubber) if you have any questions about this project.
+Contact me by [E-mail](mailto:portfoliolinkemail@gmail.com) or [GitHub](https://github.com/espinbrandon49) if you have any questions about this project.
