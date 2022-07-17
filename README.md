@@ -6,6 +6,8 @@
 ## Description 
 Using this application you can quickly and easily create a README file by using a command-line application to generate one so that you can devote more time to working on the project. 
 
+[GitHub repository](https://github.com/espinbrandon49/READMEForYou)
+
 ## Table of Contents 
 
   * [Installation](#installation)
@@ -20,7 +22,7 @@ To generate a README.md file, install node.js and NPM on windows, clone down the
 1. Download and install [Node.js](https://nodejs.org/en/download/)
 2. Clone the repository
 ```bash
-git clone git@github.com:espinbrandon49/readmeForYou.git
+git clone git@github.com:espinbrandon49/READMEForYou.git
 ```
 3. run npm install to install the npm dependencies from the [package.json](./package.json)
 ```bash
@@ -67,7 +69,7 @@ success
 ![demo video](./assets/images/demoVideo.gif)
 ## Questions 
 
-Contact me by [E-mail](mailto:f) or [GitHub](https://github.com/f)
+Contact me by [E-mail](mailto:portfoliolinkemail@gmail.com) or [GitHub](https://github.com/espinbrandon49)
 * For any questions
 * Ways to make the README that is generated better
 * I'd love to see your awesome README!
